@@ -1,17 +1,34 @@
 # Game Development Project Plan
 
-## Phase 1: Concept & Vision (Current Phase)
+**Development roadmap and detailed planning**
 
-### 1.1 Core Game Concept
-**Current Direction:**
-- **Concept:** Fantasy Exploration Simulator - Side-scrolling exploration game
-- **Genre:** Casual Exploration / Walking Simulator
-- **Core Activity:** Aimless wandering through handcrafted fantasy landscapes
-- **Character:** Relatable magical being (wizard or elf) - human-like, not too fantastical
-- **Perspective:** Side-scrolling 2D
-- **Session Flexibility:** Playable for 5 minutes OR 5 hours
-- **Art Style:** Detailed pixel art - beautiful and polished
-- **Core Experience:** Peaceful, aimless exploration with simple item collection
+> **Note:** For quick game concept reference, see [CONTEXT.md](./CONTEXT.md)
+
+---
+
+## Current Status
+
+**Phase:** Pre-Production / Initial Setup  
+**Completed:**
+- ✅ Technology stack chosen (Phaser 3.80.1)
+- ✅ Project structure initialized
+- ✅ Basic Phaser setup with scenes and systems
+
+**Next Steps:**
+- Define specific environments (which 1-2 to start)
+- Create initial GDD
+- Implement core exploration mechanics
+- Design and create first environment assets
+
+---
+
+## Phase 1: Concept & Vision ✅
+
+### Core Game Concept
+
+**Game Type:** Fantasy Exploration Simulator - Side-scrolling exploration game  
+**Core Activity:** Aimless wandering through handcrafted fantasy landscapes  
+**Core Experience:** Peaceful, aimless exploration with simple item collection
 
 **Core Gameplay Loop:**
 - Walk through side-scrolling environments, discover items, take in scenery
@@ -19,56 +36,26 @@
 - Simple item gathering (no complex menus or nested systems)
 - Progression: Unlock new areas/paths, discover new items and locations
 
-**What Makes It Unique:**
-- Pure exploration focus (no quests, no pressure)
-- Side-scrolling handcrafted fantasy worlds
-- Simple systems (no deep menus or complex taxonomies)
-- Beautiful detailed pixel art
-- Peaceful, meditative experience
-
 **Target Audience:** Casual gamers, relaxation seekers, exploration game fans, players who enjoy beautiful scenery
-
-**Intended Play Session:** Flexible - 5 minutes to 5 hours
 
 **Emotional Experience:** Relaxed, calm, peaceful, meditative, wonder
 
-**Deliverables:**
-- [ ] Game Design Document (GDD) - High-level concept
-- [ ] Core mechanic description (1-2 pages)
-- [ ] Art style reference/mood board
-- [ ] Target platform priorities (Web → Mobile → Steam)
+### Game Pillars
 
-### 1.2 Game Pillars
-Define 3-5 core pillars that guide all design decisions:
-
-**Game Pillars (Defined):**
-- **Peaceful Exploration** - No pressure, no danger, just wander and discover
-- **Flexible Playtime** - Enjoyable in 5 minutes or 5 hours
-- **Player-Controlled** - Player controls all movement and exploration
-- **Beautiful Pixel Art** - Detailed, polished, atmospheric visuals
-- **Simplicity First** - Simple systems, no complex menus or nested structures
-- **Handcrafted Worlds** - Quality over quantity, start small (1-2 environments), expand later
-- **Aimless Discovery** - No quests or objectives, player sets their own pace
-
-*These pillars guide all design decisions - if a feature conflicts with these, reconsider it.*
-
-### 1.3 Scope Definition
-**Critical Questions:**
-- What is the MVP (Minimum Viable Product)?
-- What features are "nice to have" vs. "must have"?
-- What is the target development timeline?
-- What are the success metrics?
-
-**Deliverables:**
-- [ ] Feature list (Must Have / Should Have / Nice to Have)
-- [ ] MVP definition
-- [ ] Success criteria
+1. **Peaceful Exploration** - No pressure, no danger, just wander and discover
+2. **Flexible Playtime** - Enjoyable in 5 minutes or 5 hours
+3. **Player-Controlled** - Player controls all movement and exploration
+4. **Beautiful Pixel Art** - Detailed, polished, atmospheric visuals
+5. **Simplicity First** - Simple systems, no complex menus or nested structures
+6. **Handcrafted Worlds** - Quality over quantity, start small (1-2 environments), expand later
+7. **Aimless Discovery** - No quests or objectives, player sets their own pace
 
 ---
 
 ## Phase 2: Design Documentation
 
-### 2.1 Game Design Document (GDD)
+### Game Design Document (GDD)
+
 **Sections to Include:**
 - Executive Summary
 - Game Overview
@@ -81,7 +68,70 @@ Define 3-5 core pillars that guide all design decisions:
 - Audio Direction
 - Technical Requirements
 
-### 2.2 Prototype Planning
+### Detailed Game Concept
+
+#### Character
+- **Player:** Relatable human-like being (wizard or elf)
+- **Not:** Fairies, dragons, or overly fantastical creatures
+- **Design:** Simple, approachable, average person with magical abilities
+- **Movement:** Primary walking (side-scrolling), flying may appear as discovery later
+
+#### World Design
+- **Structure:** Handcrafted (not procedural)
+- **Initial Scope:** 1-2 environments to start
+- **Perspective:** Side-scrolling 2D
+- **Environments:** Examples - Enchanted Forest, Misty Valley, Crystal Cave, Starlit Meadow
+- **Philosophy:** Quality over quantity, expandable later
+
+#### What Players Discover
+
+**Simple Item Collection:**
+- Rare flowers, crystals, feathers
+- Mystical artifacts
+- Glowing orbs, stardust
+- Natural items (shells, stones, leaves)
+- **Simple system:** No deep menus, nested structures, or complex taxonomy
+
+**Magical Phenomena:**
+- Aurora sightings
+- Meteor showers
+- Glowing mushrooms
+- Floating lights
+- Ancient ruins
+- Hidden groves
+
+**Creatures (Peaceful):**
+- Friendly wildlife
+- Magical creatures (butterflies, small spirits)
+- Optional: simple encounter/collection
+
+**Locations:**
+- Scenic viewpoints
+- Special landmarks
+- Each location discovered adds to simple travel log
+
+#### Progression Systems
+
+**Simple Collection:**
+- Items collected (simple count/list)
+- Locations discovered
+- Creatures encountered
+- Phenomena witnessed
+
+**Character Growth (Simple):**
+- Unlock new areas/paths
+- Movement upgrades (faster walking, maybe flight later)
+- Collection capacity (carry more items)
+- Discovery abilities (sense hidden items)
+
+**World Unfolding:**
+- New environments unlock as you explore
+- New paths/routes open up
+- Seasonal changes (future)
+- Time of day affects discoveries
+
+### Prototype Planning
+
 **Key Prototypes to Build:**
 1. **Core Mechanic Prototype** - Side-scrolling walking, item collection, prove exploration is fun
 2. **Control Scheme Prototype** - Simple left/right walking, test responsiveness
@@ -89,7 +139,7 @@ Define 3-5 core pillars that guide all design decisions:
 4. **Performance Test** - Ensure web/mobile viability
 5. **Side-Scrolling Path System** - Test path design, item placement, exploration flow
 
-### 2.3 Asset Pipeline Planning
+### Asset Pipeline Planning
 - Art asset specifications (sprite sizes, animation frame counts)
 - Audio format requirements
 - Asset naming conventions
@@ -97,29 +147,15 @@ Define 3-5 core pillars that guide all design decisions:
 
 ---
 
-## Phase 3: Technical Architecture
+## Phase 3: Technical Architecture ✅
 
-### 3.1 Technology Stack Selection
-**Considerations:**
-- **Web-first approach** (primary platform)
-- **Cross-platform compatibility** (mobile wrappers, Steam)
-- **Performance requirements**
-- **Development speed vs. flexibility**
+### Technology Stack (Chosen)
 
-**Recommended Stack Options:**
-- **Phaser 3** - Mature 2D web game framework, good docs
-- **PixiJS** - High-performance rendering, more manual setup
-- **Unity WebGL** - Full engine, larger build size
-- **Godot** - Open source, good 2D support, exports to web/mobile/desktop
+- **Framework:** Phaser 3.80.1
+- **Build Tool:** Vite 4.5.2
+- **Rationale:** Mature 2D web game framework, good documentation, web-first approach
 
-**Decision Criteria:**
-- Learning curve
-- Community support
-- Export capabilities
-- Performance on target platforms
-- License/cost
-
-### 3.2 Project Structure
+### Project Structure
 ```
 game/
 ├── docs/              # Design documents, GDD, planning
@@ -139,15 +175,8 @@ game/
 └── tools/             # Build tools, asset processors
 ```
 
-### 3.3 Development Environment Setup
-- Version control (Git)
-- Package manager
-- Build tools
-- Development server
-- Testing framework
-- Code quality tools (linter, formatter)
+### Platform Considerations
 
-### 3.4 Platform Considerations
 **Web:**
 - Browser compatibility
 - Performance optimization
@@ -167,24 +196,23 @@ game/
 
 ---
 
-## Phase 4: Pre-Production Structure
+## Phase 4: Pre-Production Structure ✅
 
-### 4.1 Create Initial Project Structure
-Set up the foundational folders and files:
-- [ ] Initialize project with chosen framework
-- [ ] Set up folder structure
-- [ ] Create basic configuration files
-- [ ] Set up build pipeline
-- [ ] Initialize version control
+### Initial Project Structure (Completed)
+- ✅ Initialize project with chosen framework
+- ✅ Set up folder structure
+- ✅ Create basic configuration files
+- ✅ Set up build pipeline
+- ✅ Initialize version control
 
-### 4.2 Development Workflow
+### Development Workflow
 - Branching strategy
 - Code review process
 - Asset integration workflow
 - Testing procedures
 - Build and deployment process
 
-### 4.3 Tools & Pipeline
+### Tools & Pipeline
 - Asset creation tools (Aseprite, Photoshop, etc.)
 - Audio tools (Audacity, Reaper, etc.)
 - Version control for assets
@@ -195,14 +223,14 @@ Set up the foundational folders and files:
 
 ## Phase 5: Prototype Development
 
-### 5.1 Core Mechanic Prototype
+### Core Mechanic Prototype
 **Goal:** Prove the game is fun
 - [ ] Implement core gameplay loop
 - [ ] Basic controls
 - [ ] Minimal art (placeholders OK)
 - [ ] Playtest and iterate
 
-### 5.2 Technical Prototype
+### Technical Prototype
 **Goal:** Validate technical approach
 - [ ] Performance testing
 - [ ] Input system
@@ -213,41 +241,40 @@ Set up the foundational folders and files:
 
 ## Phase 6: Production Planning
 
-### 6.1 Task Breakdown
-- Create detailed task list from GDD
-- Estimate effort for each task
-- Prioritize features
-- Identify dependencies
+### MVP Scope
 
-### 6.2 Milestone Planning
-Define clear milestones:
+**Minimum Viable Product:**
+- 1 handcrafted side-scrolling environment
+- Simple walking controls (left/right)
+- Basic item collection (pick up items along path)
+- Simple collection display
+- Beautiful pixel art for one environment
+
+**Future Expansion:**
+- Additional environments
+- More items to discover
+- Flying ability/discovery
+- Seasonal changes
+- More routes within environments
+
+### Milestone Planning
 - **Milestone 1:** Core mechanic working
 - **Milestone 2:** First playable level
 - **Milestone 3:** Content complete
 - **Milestone 4:** Polish and optimization
 - **Milestone 5:** Release ready
 
-### 6.3 Risk Assessment
+### Task Breakdown
+- Create detailed task list from GDD
+- Estimate effort for each task
+- Prioritize features
+- Identify dependencies
+
+### Risk Assessment
 - Technical risks
 - Scope risks
 - Timeline risks
 - Platform-specific risks
-
----
-
-## Immediate Next Steps
-
-### This Week:
-1. **Define Core Concept** - Answer Phase 1.1 questions
-2. **Choose Technology Stack** - Research and decide on framework
-3. **Create Initial GDD** - Start documenting the vision
-4. **Set Up Project Structure** - Initialize repository and folders
-
-### This Month:
-1. **Complete GDD** - Full design documentation
-2. **Build Core Prototype** - Prove the fun factor
-3. **Validate Technical Approach** - Test performance and compatibility
-4. **Establish Workflow** - Set up tools and processes
 
 ---
 
@@ -262,20 +289,7 @@ Define clear milestones:
 
 ---
 
-## Questions for Creative Director
-
-**Current Direction (Defined):**
-- **Type:** Fantasy Exploration Simulator - Side-scrolling exploration game
-- **Character:** Relatable magical being (wizard or elf)
-- **Movement:** Walking primarily, flying may come as discovery later
-- **World:** Handcrafted, small to start (1-2 environments), expandable
-- **Art Style:** Detailed pixel art - beautiful and polished
-- **Collection:** Simple item gathering, no deep menus or nested structures
-- **Structure:** Side-scrolling with set routes for wandering
-- **Playtime:** Flexible - enjoyable for 5 minutes or 5 hours
-- **Core Feel:** Peaceful, aimless exploration
-
-**Still Need Clarity On:**
+## Open Questions
 
 1. **Monetization?** (Free, one-time purchase, freemium)
 2. **Timeline expectations?** (Weekend project, months, ongoing)
@@ -293,8 +307,9 @@ Define clear milestones:
 - Platform-specific documentation
 - Asset marketplaces (itch.io, OpenGameArt)
 - Community forums and Discord servers
+- [Decision Log](./docs/DECISION_LOG.md) - Key milestone decisions
+- [Cast n Chill Analysis](./docs/CAST_N_CHILL_ANALYSIS.md) - Inspiration game analysis
 
 ---
 
 *This is a living document - update as the project evolves*
-

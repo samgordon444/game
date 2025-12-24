@@ -1,10 +1,13 @@
-// Manages set routes/paths for wandering
+// Manages set routes/paths in the world
+// Routes define paths that players can explore (player controls movement, not automatic)
+// Useful for: defining world boundaries, placing collectibles, camera paths, etc.
 export class RouteSystem {
     constructor() {
         this.routes = [];
     }
 
     // Define a route (array of waypoints)
+    // Routes represent paths in the world that players can explore
     addRoute(name, waypoints) {
         this.routes.push({
             name: name,
@@ -24,6 +27,8 @@ export class RouteSystem {
     }
 
     // Get position along route at a given progress (0-1)
+    // Useful for: placing collectibles, camera following, spawn points, etc.
+    // Note: Player controls movement - this is NOT for automatic player movement
     getPositionOnRoute(route, progress) {
         if (!route || route.waypoints.length === 0) return null;
         

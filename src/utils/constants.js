@@ -18,8 +18,8 @@ export const ENVIRONMENTS = {
 };
 
 export const PLAYER_STATES = {
-    IDLE: 'idle',
+    STANDING: 'standing', // Player is not moving
     WALKING: 'walking',
-    FLYING: 'flying'
+    FLYING: 'flying' // May be unlocked later as a discovery
 };
 

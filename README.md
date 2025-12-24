@@ -4,7 +4,7 @@ A casual 2D exploration game with potential releases on mobile and Steam.
 
 ## Project Status
 
-🚧 **Early Planning Phase** - Concept development and structure setup
+🚧 **Pre-Production / Initial Setup** - Technology stack chosen, project structure initialized
 
 ## Current Direction
 
@@ -25,8 +25,7 @@ A casual 2D exploration game with potential releases on mobile and Steam.
 
 1. **Quick Context:** Read [CONTEXT.md](./CONTEXT.md) for a concise overview of the game concept
 2. Review [PROJECT_PLAN.md](./PROJECT_PLAN.md) for the overall development roadmap
-3. Fill out [docs/GDD_TEMPLATE.md](./docs/GDD_TEMPLATE.md) with your game concept
-4. Set up the development environment (once technology stack is chosen)
+3. Set up the development environment (Phaser 3 + Vite already configured)
 
 ## Project Structure
 
@@ -46,21 +45,22 @@ game/
 
 ## Documentation
 
+### Core Documents
 - **[CONTEXT.md](./CONTEXT.md)** - **Quick reference for AI agents** - Start here for concise project overview
-- [Project Plan](./PROJECT_PLAN.md) - Overall development roadmap
-- [Exploration Concept](./docs/CONCEPT_EXPLORATION.md) - Detailed exploration game concept
+- **[PROJECT_PLAN.md](./PROJECT_PLAN.md)** - **Development roadmap and detailed planning**
+
+### Reference Documents
+- [Decision Log](./docs/DECISION_LOG.md) - Key milestone decisions
 - [GDD Template](./docs/GDD_TEMPLATE.md) - Game Design Document template
-- [Cast n Chill Analysis](./docs/CAST_N_CHILL_ANALYSIS.md) - Analysis of inspiration game mechanics and design
-- [Idle/Casual Design Guide](./docs/IDLE_CASUAL_DESIGN.md) - Design considerations for casual games (note: idle mechanics not included in current version)
-- [Concept Brainstorm](./docs/CONCEPT_BRAINSTORM.md) - Brainstorming worksheet
-- [Technology Research](./docs/TECHNOLOGY_RESEARCH.md) - Framework comparison and recommendations
+- [Cast n Chill Analysis](./docs/CAST_N_CHILL_ANALYSIS.md) - Inspiration game analysis
+- [Technology Research](./docs/TECHNOLOGY_RESEARCH.md) - Framework comparison (historical reference)
 
 ## Next Steps
 
-1. **Define the core game concept** - What type of game? What's the core mechanic?
-2. **Choose technology stack** - Research frameworks (Phaser, PixiJS, Unity, Godot)
-3. **Create initial GDD** - Document the vision using the template
-4. **Set up project structure** - Initialize with chosen framework
+1. **Define specific environments** - Which 1-2 environments to start with?
+2. **Create initial GDD** - Document the vision using the template
+3. **Implement core exploration mechanics** - Walking, item collection
+4. **Design and create first environment assets** - Pixel art for first environment
 
 ## Questions to Answer
 

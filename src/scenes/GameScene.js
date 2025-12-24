@@ -28,7 +28,7 @@ export class GameScene extends Phaser.Scene {
         // TODO: Update game logic every frame
         // - Handle player movement
         // - Check collisions
-        // - Update idle system
+        // - Update collection system
     }
 }
 

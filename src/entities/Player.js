@@ -12,7 +12,6 @@ export class Player extends Phaser.GameObjects.Sprite {
         
         // Player properties
         this.speed = 200; // pixels per second
-        this.isIdle = false;
     }
 
     // Move left
@@ -30,18 +29,6 @@ export class Player extends Phaser.GameObjects.Sprite {
     // Stop moving
     stop() {
         this.body.setVelocityX(0);
-    }
-
-    // Start idle wandering along a route
-    startIdleWandering(route) {
-        this.isIdle = true;
-        // TODO: Implement route following logic
-    }
-
-    // Stop idle wandering
-    stopIdleWandering() {
-        this.isIdle = false;
-        this.stop();
     }
 }
 
