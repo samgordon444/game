@@ -8,17 +8,13 @@
 
 ## Current Status
 
-**Phase:** Pre-Production / Initial Setup  
+**Phase:** Pre-Production / Initial Setup ✅  
 **Completed:**
 - ✅ Technology stack chosen (Phaser 3.80.1)
 - ✅ Project structure initialized
 - ✅ Basic Phaser setup with scenes and systems
 
-**Next Steps:**
-- Define specific environments (which 1-2 to start)
-- Create initial GDD
-- Implement core exploration mechanics
-- Design and create first environment assets
+**Next Phase:** Core Development - Foundation (see Development Phases below)
 
 ---
 
@@ -52,38 +48,22 @@
 
 ---
 
-## Phase 2: Design Documentation
+## Design Reference
 
-### Game Design Document (GDD)
-
-**Sections to Include:**
-- Executive Summary
-- Game Overview
-- Core Mechanics (detailed)
-- Controls & Input
-- Progression Systems
-- Level/World Design
-- UI/UX Flow
-- Art Style Guide
-- Audio Direction
-- Technical Requirements
-
-### Detailed Game Concept
-
-#### Character
+### Character
 - **Player:** Relatable human-like being (wizard or elf)
 - **Not:** Fairies, dragons, or overly fantastical creatures
 - **Design:** Simple, approachable, average person with magical abilities
 - **Movement:** Primary walking (side-scrolling), flying may appear as discovery later
 
-#### World Design
+### World Design
 - **Structure:** Handcrafted (not procedural)
 - **Initial Scope:** 1-2 environments to start
 - **Perspective:** Side-scrolling 2D
 - **Environments:** Examples - Enchanted Forest, Misty Valley, Crystal Cave, Starlit Meadow
 - **Philosophy:** Quality over quantity, expandable later
 
-#### What Players Discover
+### What Players Discover
 
 **Simple Item Collection:**
 - Rare flowers, crystals, feathers
@@ -93,57 +73,32 @@
 - **Simple system:** No deep menus, nested structures, or complex taxonomy
 
 **Magical Phenomena:**
-- Aurora sightings
-- Meteor showers
-- Glowing mushrooms
-- Floating lights
-- Ancient ruins
-- Hidden groves
+- Aurora sightings, meteor showers, glowing mushrooms
+- Floating lights, ancient ruins, hidden groves
 
 **Creatures (Peaceful):**
-- Friendly wildlife
-- Magical creatures (butterflies, small spirits)
+- Friendly wildlife, magical creatures (butterflies, small spirits)
 - Optional: simple encounter/collection
 
 **Locations:**
-- Scenic viewpoints
-- Special landmarks
+- Scenic viewpoints, special landmarks
 - Each location discovered adds to simple travel log
 
-#### Progression Systems
+### Progression Systems
 
 **Simple Collection:**
 - Items collected (simple count/list)
-- Locations discovered
-- Creatures encountered
-- Phenomena witnessed
+- Locations discovered, creatures encountered, phenomena witnessed
 
 **Character Growth (Simple):**
 - Unlock new areas/paths
 - Movement upgrades (faster walking, maybe flight later)
-- Collection capacity (carry more items)
-- Discovery abilities (sense hidden items)
+- Collection capacity, discovery abilities
 
 **World Unfolding:**
 - New environments unlock as you explore
 - New paths/routes open up
-- Seasonal changes (future)
-- Time of day affects discoveries
-
-### Prototype Planning
-
-**Key Prototypes to Build:**
-1. **Core Mechanic Prototype** - Side-scrolling walking, item collection, prove exploration is fun
-2. **Control Scheme Prototype** - Simple left/right walking, test responsiveness
-3. **Art Style Test** - Detailed pixel art validation, atmospheric visuals
-4. **Performance Test** - Ensure web/mobile viability
-5. **Side-Scrolling Path System** - Test path design, item placement, exploration flow
-
-### Asset Pipeline Planning
-- Art asset specifications (sprite sizes, animation frame counts)
-- Audio format requirements
-- Asset naming conventions
-- Version control strategy for assets
+- Seasonal changes (future), time of day affects discoveries
 
 ---
 
@@ -221,60 +176,93 @@ game/
 
 ---
 
-## Phase 5: Prototype Development
+## Development Phases
 
-### Core Mechanic Prototype
-**Goal:** Prove the game is fun
-- [ ] Implement core gameplay loop
-- [ ] Basic controls
-- [ ] Minimal art (placeholders OK)
-- [ ] Playtest and iterate
+These phases build on each other. Work through them at your own pace - no rigid timelines.
 
-### Technical Prototype
-**Goal:** Validate technical approach
-- [ ] Performance testing
-- [ ] Input system
-- [ ] Asset loading
-- [ ] Cross-platform testing
+### Phase 1: Foundation
+**Goal:** Get basic movement working
+
+**Key Tasks:**
+- Character sprite appears on screen
+- Left/Right controls move character smoothly
+- Camera follows character
+- Basic ground/platform to walk on
+
+**Done When:** You can control the character and it feels responsive
 
 ---
 
-## Phase 6: Production Planning
+### Phase 2: World Building
+**Goal:** Create one explorable environment
 
-### MVP Scope
+**Key Tasks:**
+- One complete side-scrolling path (at least 2-3 screen widths)
+- Background layers (sky, distant elements, foreground)
+- Ground/platforms with collision
+- Basic visual polish (no placeholder boxes)
 
-**Minimum Viable Product:**
+**Done When:** The environment feels like a real place you want to explore
+
+---
+
+### Phase 3: Discovery
+**Goal:** Add items to find and collect
+
+**Key Tasks:**
+- 3-5 collectible items placed in the world
+- Character can walk up to items and collect them
+- Visual feedback when collecting (sparkle, sound, item disappears)
+- Simple counter showing items collected
+
+**Done When:** Finding an item feels satisfying and doesn't interrupt the peaceful flow
+
+---
+
+### Phase 4: Polish
+**Goal:** Make it feel like a real game, not a prototype
+
+**Key Tasks:**
+- Character has walking animation (idle + walk cycle)
+- Ambient music or soundscape
+- Sound effects for collection
+- Smooth camera movement
+- Polished UI (collection counter, maybe simple menu)
+- Performance runs at 60fps
+
+**Done When:** It feels like a finished game, not a work-in-progress
+
+---
+
+### Phase 5: Content Expansion
+**Goal:** Expand MVP into a complete experience
+
+**Key Tasks:**
+- Expand environment to 5-10 screen widths
+- Add 10-15 total collectibles
+- Add 2-3 special locations/landmarks
+- Simple "travel log" showing discovered locations
+- Playtest with others and iterate
+
+**Done When:** A new player can explore for 10-15 minutes and feel satisfied
+
+---
+
+## MVP Scope
+
+**Minimum Viable Product (Phases 1-4):**
 - 1 handcrafted side-scrolling environment
 - Simple walking controls (left/right)
 - Basic item collection (pick up items along path)
 - Simple collection display
 - Beautiful pixel art for one environment
 
-**Future Expansion:**
+**Future Expansion (Post-MVP):**
 - Additional environments
 - More items to discover
 - Flying ability/discovery
 - Seasonal changes
 - More routes within environments
-
-### Milestone Planning
-- **Milestone 1:** Core mechanic working
-- **Milestone 2:** First playable level
-- **Milestone 3:** Content complete
-- **Milestone 4:** Polish and optimization
-- **Milestone 5:** Release ready
-
-### Task Breakdown
-- Create detailed task list from GDD
-- Estimate effort for each task
-- Prioritize features
-- Identify dependencies
-
-### Risk Assessment
-- Technical risks
-- Scope risks
-- Timeline risks
-- Platform-specific risks
 
 ---
 
@@ -302,13 +290,10 @@ game/
 
 ## Resources & References
 
-- Game design frameworks (MDA, DDE)
-- 2D game development tutorials
-- Platform-specific documentation
-- Asset marketplaces (itch.io, OpenGameArt)
-- Community forums and Discord servers
 - [Decision Log](./docs/DECISION_LOG.md) - Key milestone decisions
-- [Cast n Chill Analysis](./docs/CAST_N_CHILL_ANALYSIS.md) - Inspiration game analysis
+- [Vision & Development Guidance](./docs/VISION_AND_ROADMAP.md) - Development philosophy, principles, and mindset guidance
+- Asset marketplaces (itch.io, OpenGameArt)
+- Phaser 3 documentation and tutorials
 
 ---
 
